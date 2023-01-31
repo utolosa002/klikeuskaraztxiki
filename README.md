@@ -1,2 +1,2 @@
-# kliktxikieuskaraz
-kliktxikieuskaraz.eus
+# klikeuskaraztxiki
+klikeuskaraztxiki.eus
