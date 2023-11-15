@@ -1,103 +1,79 @@
-@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
-
-html,
-body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    display: grid;
-    font-family: 'Open Sans Condensed', sans-serif;
+.wrapper{
+  margin-top: 50vh;
+  margin-bottom: auto;
+  margin-left:auto;
+  margin-right:auto;
+  width: 225px;
 }
-
-img {
-    max-height:200px;
-    max-width:200px;
-    height:auto;
-    width:auto;
+.wrapper .icon{
+  position: relative;
+  background-color: #d4d4d4;
+  border-radius: 50%;
+  margin: 0 auto;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  color: #333;
+  text-decoration: none;
 }
-
-.botoiak {
-    display: flex;
-}
-
-.goiburua {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.col {
-    flex: 100%;
-}
-
-div[class*=container] {
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.container-1 {
-    background: #03c100;
-}
-
-.container-2 {
-    background: #4E598C;
-}
-
-/*
- BUTTON STYLING
-*/
-
-.btn {
-    position: relative;
-    color: white;
-    width: 256px;
-    height: 64px;
-    line-height: 64px;
-    transition: all 0.3s;
-
-    span {
-        transition: all 0.3s;
-        tranform: scale(1, 1);
-    }
-}
-
-.btn::before,
-.btn::after {
-    content: '';
+  .wrapper .tooltip {
     position: absolute;
-    transition: all 0.3s;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-.btn-one::before {
-    left: 4px;
-    z-index: 1;
-
+    top: 0;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    background: rgba(255, 255, 255, 0.1);
-    transform: scale(0.1, 1);
-}
-
-.btn-one:hover::before {
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background-color: #fefefe;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .icon:hover .tooltip {
+    top: -45px;
     opacity: 1;
-    transform: scale(1, 1);
-}
-
-.btn-one::after {
-    transition: all 0.3s;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-}
-
-.btn-one:hover::after {
-    transform: scale(1, .1);
-    opacity: 0;
-}
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .whatsapp:hover,
+  .wrapper .whatsapp:hover .tooltip,
+  .wrapper .whatsapp:hover .tooltip::before {
+    background-color: #01b428;
+    color: #ffffff;
+  }
+  .wrapper .telegram:hover,
+  .wrapper .telegram:hover .tooltip,
+  .wrapper .telegram:hover .tooltip::before {
+    background-color: #3c5da7;
+    color: #ffffff;
+  }
+  .wrapper .klik,
+  .wrapper .klik:hover,
+  .wrapper .klik:hover .tooltip,
+  .wrapper .klik:hover .tooltip::before {
+    background-image: url("./logoa.jpg");
+    background-size: cover;
+    color: #000000;
+  }
