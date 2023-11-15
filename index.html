@@ -1,24 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klik Euskaraz Txiki</title>
+    <style>
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 50px;
+        }
+        h1 {
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .logoa {
+            max-width: 100px;
+            margin: 20px 0;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .contact-button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .whatsapp-button {
+            background-color: #25d366;
+            color: #fff;
+        }
+        .telegram-button {
+            background-color: #0088cc;
+            color: #fff;
+        }
+        .contact-button:hover {
+            background-color: #ffcc29;
+        }
+    </style>
 </head>
 <body>
-    <div class="wrapper">
-        <a href="https://chat.whatsapp.com/HK4MvHNULuz9aFvqbqsI6a" class="icon whatsapp">
-          <div class="tooltip">WhatsApp</div>
-          <span><i class="fab fa-whatsapp"></i></span>
-        </a>
-        <a href="https://t.me/klikeuskaraztxiki" class="icon telegram">
-          <div class="tooltip">Telegram</div>
-          <span><i class="fab fa-telegram"></i></span>
-        </a>
-        <a href="https://meta.eus/index.php/s/bXzo6qdtGCJA8GG" class="icon klik">
-          <div class="tooltip">KlikEuskaraztxiki</div>
-          <span><i class="fab"></i></span>
-        </a>
-      </div>
-</body>
+    <h1>Klik Euskaraz Txiki!</h1>
 
+    <a href="https://meta.eus/index.php/s/bXzo6qdtGCJA8GG"><img src="logoa.jpg" alt="klikeuskaraztxiki" class="logoa"></a>
+    
+    <div class="button-container">
+        <a href="https://chat.whatsapp.com/HK4MvHNULuz9aFvqbqsI6a" target="_blank" class="contact-button whatsapp-button">WhatsApp</a>
+        <a href="https://t.me/klikeuskaraztxiki" target="_blank" class="contact-button telegram-button">Telegram</a>
+    </div>
+
+</body>
 </html>
