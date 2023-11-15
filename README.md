@@ -1,2 +1,2 @@
 # klikeuskaraztxiki
-klikeuskaraztxiki.eus
+https://utolosa002.github.io/klikeuskaraztxiki/
